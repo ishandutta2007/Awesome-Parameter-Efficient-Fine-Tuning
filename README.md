@@ -1,11 +1,21 @@
-# Awesome-Parameter-Efficient-Fine-Tuning
-## Parameter-Efficient Fine-Tuning (PEFT): Evolution, Variants, & Applications
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Parameter-Efficient Fine-Tuning Banner">
+</p>
 
-Parameter-Efficient Fine-Tuning (PEFT) is a model adaptation framework that enables the customization of massive foundation models without updating all of their base parameters. Traditional Full Fine-Tuning (FFT) requires adjusting every weight tensor in a network, which is computationally prohibitive and requires storing distinct, multi-gigabyte copies of the model for every downstream task. PEFT solves this by freezing the original model parameters and tuning only a tiny fraction (often $<1\%$) of auxiliary weights, drastically reducing computational overhead, storage footprints, and VRAM requirements while avoiding catastrophic forgetting.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+# 🚀 Awesome-Parameter-Efficient-Fine-Tuning
+## 🧠 Parameter-Efficient Fine-Tuning (PEFT): Evolution, Variants, & Applications
+
+Parameter-Efficient Fine-Tuning (PEFT) is a revolutionary model adaptation framework that enables the customization of massive foundation models without updating all of their base parameters. Traditional Full Fine-Tuning (FFT) requires adjusting every weight tensor in a network, which is computationally prohibitive and requires storing distinct, multi-gigabyte copies of the model for every downstream task. PEFT solves this by freezing the original model parameters and tuning only a tiny fraction (often $<1\%$) of auxiliary weights, drastically reducing computational overhead, storage footprints, and VRAM requirements while avoiding catastrophic forgetting. 🌟
 
 ---
 
-## 1. The Chronological Evolution
+## 🕰️ 1. The Chronological Evolution
 
 The algorithmic progression of PEFT reflects a transition from sequential bottleneck architecture layers to dynamic soft-prompt injections, moving toward modern localized matrix decompositions.
 
@@ -25,7 +35,7 @@ flowchart LR
 
 ---
 
-## 2. Core Methodological Variants
+## 🔬 2. Core Methodological Variants
 
 PEFT techniques are structurally categorized based on how they alter or interact with the underlying neural network graph during backward passes.
 
@@ -37,7 +47,7 @@ PEFT techniques are structurally categorized based on how they alter or interact
 
 ---
 
-## 3. Advanced LoRA Family Implementations
+## ⚡ 3. Advanced LoRA Family Implementations
 
 Because low-rank adaptation became the dominant industry framework, multiple highly optimized mutations emerged to increase parameter stability, convergence speed, and precision.
 
@@ -49,10 +59,23 @@ Because low-rank adaptation became the dominant industry framework, multiple hig
 
 ---
 
-## 4. Production & Downstream Applications
+## 🌍 4. Production & Downstream Applications
 
 | Application | Year | Paper Link | Description |
 | :--- | :--- | :--- | :--- |
 | [**Multi-Tenant Saas API Environments**](pages/multi_tenant_saas.md) | 2023 | [2310.18547](https://arxiv.org/abs/2310.18547) | Cloud platform providers serve thousands of distinct corporate users from a single base model instance running in VRAM. Each user's request dynamically swaps in a lightweight, custom 20MB LoRA file at runtime, eliminating the cost of hosting thousands of standalone base models. |
 | [**Edge & TinyML Device Personalization**](pages/edge_tinyml.md) | 2020 | [2007.11622](https://arxiv.org/abs/2007.11622) | Smart wearable devices or local robotic units adapt their language models on-device using local sensor feeds via QLoRA. This preserves user data privacy and handles training under tight hardware power caps. |
 | [**Cross-Domain Modality Expansion**](pages/cross_domain_modality.md) | 2023 | [2304.08485](https://arxiv.org/abs/2304.08485) | Turning standard text-only Large Language Models into multi-modal Vision-Language Models. PEFT layers are trained exclusively over cross-attention visual projection adapters, mapping new image tokens to the frozen text engine. |
+
+---
+
+## 📈 Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Parameter-Efficient-Fine-Tuning&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Parameter-Efficient-Fine-Tuning&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Parameter-Efficient-Fine-Tuning&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Parameter-Efficient-Fine-Tuning&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
