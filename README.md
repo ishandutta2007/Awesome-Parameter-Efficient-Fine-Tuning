@@ -9,7 +9,12 @@ Parameter-Efficient Fine-Tuning (PEFT) is a model adaptation framework that enab
 
 The algorithmic progression of PEFT reflects a transition from sequential bottleneck architecture layers to dynamic soft-prompt injections, moving toward modern localized matrix decompositions.
 
-[Adapter Layers (2019)] -------> [Soft Prompting (Prefix/Prompt Tuning, 2021)] -------> [Low-Rank Adaptation (LoRA/QLoRA, 2021-Present)](Sequential Latency Overhead)         (Context Window Cannibalization)                     (Zero-Latency Matrix Interventions)
+
+```mermaid
+flowchart LR
+    A["Adapter Layers (2019)<br/>(Sequential Latency Overhead)"] ---> B[Soft Prompting (Prefix/Prompt Tuning, 2021)<br/>(Context Window Cannibalization)"] 
+    B ---> C["Low-Rank Adaptation (LoRA/QLoRA, 2021-Present)<br/>(Zero-Latency Matrix Interventions)"] 
+```
 
 
 *   **The Bottleneck Adapter Era (Houlsby et al., 2019)**
