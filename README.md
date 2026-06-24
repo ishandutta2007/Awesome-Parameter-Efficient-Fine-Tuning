@@ -12,7 +12,7 @@ The algorithmic progression of PEFT reflects a transition from sequential bottle
 
 ```mermaid
 flowchart LR
-    A["Adapter Layers (2019)<br/>(Sequential Latency Overhead)"] ---> B[Soft Prompting (Prefix/Prompt Tuning, 2021)<br/>(Context Window Cannibalization)"] 
+    A["Adapter Layers (2019)<br/>(Sequential Latency Overhead)"] ---> B["Soft Prompting (Prefix/Prompt Tuning, 2021)<br/>(Context Window Cannibalization)"] 
     B ---> C["Low-Rank Adaptation (LoRA/QLoRA, 2021-Present)<br/>(Zero-Latency Matrix Interventions)"] 
 ```
 
